@@ -574,8 +574,8 @@
     "completion": {
       "path": "/chat/completions",
       "method": "POST"
+        }
+      }
     }
-  }
-}
-]
+  ]
 }
