@@ -471,8 +471,8 @@
       }
     },
     {
-      "id": "ollama-mistral",
-      "name": "Ollama - Mistral",
+      "id": "ollama",
+      "name": "Ollama",
       "category": "local",
       "baseUrl": "http://localhost:11434/v1",
       "protocol": "openai",
