@@ -550,6 +550,32 @@
           "method": "POST"
         }
       }
+    },
+    {
+  "id": "gpt4all-local",
+  "name": "GPT4All (Local)",
+  "category": "local",
+  "baseUrl": "http://localhost:4891/v1",
+  "protocol": "openai",
+  "capabilities": {
+    "defaultModel": "gpt4all-falcon-newbpe-q4_0",
+    "supportsStreaming": true,
+    "supportsFunctionCalling": false,
+    "supportsMultiModal": false,
+    "maxTokenLimit": 2048
+  },
+  "headers": {
+    "apiKey": {
+      "headerName": "Authorization",
+      "valuePrefix": "Bearer "
     }
+  },
+  "endpoints": {
+    "completion": {
+      "path": "/chat/completions",
+      "method": "POST"
+    }
+  }
+}
   ]
 }
