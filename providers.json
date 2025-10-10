@@ -12,7 +12,8 @@
       "capabilities": {
         "supportsStreaming": true,
         "supportsFunctionCalling": true,
-        "supportsMultiModal": true
+        "supportsMultiModal": true,
+        "maxTokenLimit": 8192
       },
       "headers": {
         "apiKey": {
@@ -37,7 +38,8 @@
       "capabilities": {
         "supportsStreaming": true,
         "supportsFunctionCalling": true,
-        "supportsMultiModal": true
+        "supportsMultiModal": true,
+        "maxTokenLimit": 200000
       },
       "headers": {
         "apiKey": {
@@ -52,37 +54,33 @@
         }
       }
     },
-  {
-  "id": "gemini-2.0-flash",
-  "name": "Google Gemini 2.0 Flash",
-  "category": "cloud",
-  "protocol": "gemini",
-  "baseUrl": "https://generativelanguage.googleapis.com/v1beta",
-  "capabilities": {
-    "supportsStreaming": true,
-    "supportsFunctionCalling": true,
-    "supportsMultiModal": true,
-    "maxTokenLimit": 1048576,
-    "defaultModel": "gemini-2.0-flash"
-  },
-  "requirements": {
-    "apiKey": true,
-    "localResources": false
-  },
-  "headers": {
-    "apiKey": {
-      "headerName": "x-goog-api-key",
-      "valuePrefix": ""
-    }
-  },
-  "endpoints": {
-    "completion": {
-      "path": "/models/gemini-2.0-flash:generateContent?alt=sse",
-      "method": "POST"       
-      }
-    }      
-  },
-       {
+    {
+      "id": "gemini-2.0-flash",
+      "name": "Google Gemini 2.0 Flash",
+      "category": "cloud",
+      "protocol": "gemini",
+      "baseUrl": "https://generativelanguage.googleapis.com/v1beta",
+      "capabilities": {
+        "supportsStreaming": true,
+        "supportsFunctionCalling": true,
+        "supportsMultiModal": true,
+        "maxTokenLimit": 1048576,
+        "defaultModel": "gemini-2.0-flash"
+      },
+      "headers": {
+        "apiKey": {
+          "headerName": "x-goog-api-key",
+          "valuePrefix": ""
+        }
+      },
+      "endpoints": {
+        "completion": {
+          "path": "/models/gemini-2.0-flash:generateContent",
+          "method": "POST"       
+        }
+      }      
+    },
+    {
       "id": "xai-grok",
       "name": "xAI Grok",
       "category": "cloud",
@@ -93,7 +91,7 @@
         "supportsStreaming": true,
         "supportsFunctionCalling": true,
         "supportsMultiModal": false,
-        "maxTokenLimit": 32000
+        "maxTokenLimit": 131072
       },
       "headers": {
         "apiKey": {
@@ -119,7 +117,7 @@
         "supportsStreaming": true,
         "supportsFunctionCalling": false,
         "supportsMultiModal": false,
-        "maxTokenLimit": 12000
+        "maxTokenLimit": 4096
       },
       "headers": {
         "apiKey": {
@@ -171,7 +169,7 @@
         "supportsStreaming": true,
         "supportsFunctionCalling": false,
         "supportsMultiModal": false,
-        "maxTokenLimit": 32000
+        "maxTokenLimit": 32768
       },
       "headers": {
         "apiKey": {
@@ -197,7 +195,7 @@
         "supportsStreaming": true,
         "supportsFunctionCalling": false,
         "supportsMultiModal": false,
-        "maxTokenLimit": 32000
+        "maxTokenLimit": 4096
       },
       "headers": {
         "apiKey": {
@@ -223,7 +221,7 @@
         "supportsStreaming": true,
         "supportsFunctionCalling": true,
         "supportsMultiModal": true,
-        "maxTokenLimit": 32000
+        "maxTokenLimit": 8192
       },
       "headers": {
         "apiKey": {
@@ -289,9 +287,8 @@
           "method": "POST"
         }
       }
-    }, 
-
-        {
+    },
+    {
       "id": "openrouter-llama",
       "name": "OpenRouter - Llama 3",
       "category": "cloud",
@@ -302,7 +299,7 @@
         "supportsStreaming": true,
         "supportsFunctionCalling": false,
         "supportsMultiModal": false,
-        "maxTokenLimit": 8000
+        "maxTokenLimit": 8192
       },
       "headers": {
         "apiKey": {
@@ -328,7 +325,7 @@
         "supportsStreaming": true,
         "supportsFunctionCalling": true,
         "supportsMultiModal": false,
-        "maxTokenLimit": 64000
+        "maxTokenLimit": 65536
       },
       "headers": {
         "apiKey": {
@@ -380,7 +377,7 @@
         "supportsStreaming": true,
         "supportsFunctionCalling": false,
         "supportsMultiModal": true,
-        "maxTokenLimit": 2000
+        "maxTokenLimit": 2048
       },
       "headers": {
         "apiKey": {
@@ -406,7 +403,7 @@
         "supportsStreaming": true,
         "supportsFunctionCalling": false,
         "supportsMultiModal": false,
-        "maxTokenLimit": 8000
+        "maxTokenLimit": 8192
       },
       "headers": {
         "apiKey": {
@@ -432,7 +429,7 @@
         "supportsStreaming": true,
         "supportsFunctionCalling": false,
         "supportsMultiModal": false,
-        "maxTokenLimit": 8000
+        "maxTokenLimit": 8192
       },
       "headers": {
         "apiKey": {
@@ -458,7 +455,7 @@
         "supportsStreaming": true,
         "supportsFunctionCalling": true,
         "supportsMultiModal": true,
-        "maxTokenLimit": 2000000
+        "maxTokenLimit": 2097152
       },
       "headers": {
         "apiKey": {
@@ -473,7 +470,7 @@
         }
       }
     },
-     {
+    {
       "id": "ollama-mistral",
       "name": "Ollama - Mistral",
       "category": "local",
@@ -484,7 +481,7 @@
         "supportsStreaming": true,
         "supportsFunctionCalling": false,
         "supportsMultiModal": false,
-        "maxTokenLimit": 4000
+        "maxTokenLimit": 8192
       },
       "headers": {
         "apiKey": {
@@ -510,7 +507,7 @@
         "supportsStreaming": true,
         "supportsFunctionCalling": false,
         "supportsMultiModal": false,
-        "maxTokenLimit": 4000
+        "maxTokenLimit": 4096
       },
       "headers": {
         "apiKey": {
@@ -536,7 +533,7 @@
         "supportsStreaming": true,
         "supportsFunctionCalling": false,
         "supportsMultiModal": false,
-        "maxTokenLimit": 4000
+        "maxTokenLimit": 4096
       },
       "headers": {
         "apiKey": {
@@ -552,28 +549,28 @@
       }
     },
     {
-  "id": "gpt4all-local",
-  "name": "GPT4All (Local)",
-  "category": "local",
-  "baseUrl": "http://localhost:4891/v1",
-  "protocol": "openai",
-  "capabilities": {
-    "defaultModel": "gpt4all-falcon-newbpe-q4_0",
-    "supportsStreaming": true,
-    "supportsFunctionCalling": false,
-    "supportsMultiModal": false,
-    "maxTokenLimit": 2048
-  },
-  "headers": {
-    "apiKey": {
-      "headerName": "Authorization",
-      "valuePrefix": "Bearer "
-    }
-  },
-  "endpoints": {
-    "completion": {
-      "path": "/chat/completions",
-      "method": "POST"
+      "id": "gpt4all-local",
+      "name": "GPT4All (Local)",
+      "category": "local",
+      "baseUrl": "http://localhost:4891/v1",
+      "protocol": "openai",
+      "capabilities": {
+        "defaultModel": "gpt4all-falcon-newbpe-q4_0",
+        "supportsStreaming": true,
+        "supportsFunctionCalling": false,
+        "supportsMultiModal": false,
+        "maxTokenLimit": 2048
+      },
+      "headers": {
+        "apiKey": {
+          "headerName": "Authorization",
+          "valuePrefix": "Bearer "
+        }
+      },
+      "endpoints": {
+        "completion": {
+          "path": "/chat/completions",
+          "method": "POST"
         }
       }
     }
