@@ -61,7 +61,7 @@
       "protocol": "gemini",
       "baseUrl": "https://generativelanguage.googleapis.com/v1beta",
       "capabilities": {
-        "defaultModel": ""
+        "defaultModel": "",
         "supportsStreaming": true,
         "supportsFunctionCalling": true,
         "supportsMultiModal": true,
