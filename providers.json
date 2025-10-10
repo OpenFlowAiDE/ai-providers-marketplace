@@ -549,8 +549,8 @@
       }
     },
     {
-      "id": "gpt4all-local",
-      "name": "GPT4All (Local)",
+      "id": "gpt4all",
+      "name": "GPT4All",
       "category": "local",
       "baseUrl": "http://localhost:4891/v1",
       "protocol": "openai",
