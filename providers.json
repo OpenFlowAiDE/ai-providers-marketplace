@@ -290,17 +290,70 @@
         }
       }
     },    
-    {
-      "id": "ollama-local",
-      "name": "Ollama (Local)",
+     {
+      "id": "ollama-mistral",
+      "name": "Ollama - Mistral",
       "category": "local",
       "baseUrl": "http://localhost:11434/v1",
       "protocol": "openai",
-      "defaultModel": "llama3", 
       "capabilities": {
+        "defaultModel": "mistral",
         "supportsStreaming": true,
         "supportsFunctionCalling": false,
-        "supportsMultiModal": false
+        "supportsMultiModal": false,
+        "maxTokenLimit": 4000
+      },
+      "headers": {
+        "apiKey": {
+          "headerName": "Authorization",
+          "valuePrefix": "Bearer "
+        }
+      },
+      "endpoints": {
+        "completion": {
+          "path": "/chat/completions",
+          "method": "POST"
+        }
+      }
+    },
+    {
+      "id": "lm-studio",
+      "name": "LM Studio",
+      "category": "local",
+      "baseUrl": "http://localhost:1234/v1",
+      "protocol": "openai",
+      "capabilities": {
+        "defaultModel": "local-model",
+        "supportsStreaming": true,
+        "supportsFunctionCalling": false,
+        "supportsMultiModal": false,
+        "maxTokenLimit": 4000
+      },
+      "headers": {
+        "apiKey": {
+          "headerName": "Authorization",
+          "valuePrefix": "Bearer "
+        }
+      },
+      "endpoints": {
+        "completion": {
+          "path": "/chat/completions",
+          "method": "POST"
+        }
+      }
+    },
+    {
+      "id": "jan-ai",
+      "name": "Jan AI",
+      "category": "local",
+      "baseUrl": "http://localhost:1337/v1",
+      "protocol": "openai",
+      "capabilities": {
+        "defaultModel": "local-model",
+        "supportsStreaming": true,
+        "supportsFunctionCalling": false,
+        "supportsMultiModal": false,
+        "maxTokenLimit": 4000
       },
       "headers": {
         "apiKey": {
