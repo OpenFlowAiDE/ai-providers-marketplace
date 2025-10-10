@@ -289,7 +289,190 @@
           "method": "POST"
         }
       }
-    },    
+    }, 
+
+        {
+      "id": "openrouter-llama",
+      "name": "OpenRouter - Llama 3",
+      "category": "cloud",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "protocol": "openai",
+      "capabilities": {
+        "defaultModel": "meta-llama/llama-3-70b-instruct",
+        "supportsStreaming": true,
+        "supportsFunctionCalling": false,
+        "supportsMultiModal": false,
+        "maxTokenLimit": 8000
+      },
+      "headers": {
+        "apiKey": {
+          "headerName": "Authorization",
+          "valuePrefix": "Bearer "
+        }
+      },
+      "endpoints": {
+        "completion": {
+          "path": "/chat/completions",
+          "method": "POST"
+        }
+      }
+    },
+    {
+      "id": "mistral-mixtral",
+      "name": "Mistral Mixtral 8x22B",
+      "category": "cloud",
+      "baseUrl": "https://api.mistral.ai/v1",
+      "protocol": "mistral",
+      "capabilities": {
+        "defaultModel": "mixtral-8x22b",
+        "supportsStreaming": true,
+        "supportsFunctionCalling": true,
+        "supportsMultiModal": false,
+        "maxTokenLimit": 64000
+      },
+      "headers": {
+        "apiKey": {
+          "headerName": "Authorization",
+          "valuePrefix": "Bearer "
+        }
+      },
+      "endpoints": {
+        "completion": {
+          "path": "/chat/completions",
+          "method": "POST"
+        }
+      }
+    },
+    {
+      "id": "cohere-command-r-plus",
+      "name": "Cohere Command R+",
+      "category": "cloud",
+      "baseUrl": "https://api.cohere.ai/v1",
+      "protocol": "cohere",
+      "capabilities": {
+        "defaultModel": "command-r-plus",
+        "supportsStreaming": true,
+        "supportsFunctionCalling": true,
+        "supportsMultiModal": false,
+        "maxTokenLimit": 128000
+      },
+      "headers": {
+        "apiKey": {
+          "headerName": "Authorization",
+          "valuePrefix": "Bearer "
+        }
+      },
+      "endpoints": {
+        "completion": {
+          "path": "/chat",
+          "method": "POST"
+        }
+      }
+    },
+    {
+      "id": "aleph-alpha-luminous",
+      "name": "Aleph Alpha Luminous",
+      "category": "cloud",
+      "baseUrl": "https://api.aleph-alpha.com",
+      "protocol": "aleph-alpha",
+      "capabilities": {
+        "defaultModel": "luminous-extended-control",
+        "supportsStreaming": true,
+        "supportsFunctionCalling": false,
+        "supportsMultiModal": true,
+        "maxTokenLimit": 2000
+      },
+      "headers": {
+        "apiKey": {
+          "headerName": "Authorization",
+          "valuePrefix": "Bearer "
+        }
+      },
+      "endpoints": {
+        "completion": {
+          "path": "/complete",
+          "method": "POST"
+        }
+      }
+    },
+    {
+      "id": "replicate-llama",
+      "name": "Replicate - Llama 3",
+      "category": "cloud",
+      "baseUrl": "https://api.replicate.com/v1",
+      "protocol": "replicate",
+      "capabilities": {
+        "defaultModel": "meta/llama-3-70b-instruct",
+        "supportsStreaming": true,
+        "supportsFunctionCalling": false,
+        "supportsMultiModal": false,
+        "maxTokenLimit": 8000
+      },
+      "headers": {
+        "apiKey": {
+          "headerName": "Authorization",
+          "valuePrefix": "Bearer "
+        }
+      },
+      "endpoints": {
+        "completion": {
+          "path": "/chat/completions",
+          "method": "POST"
+        }
+      }
+    },
+    {
+      "id": "deepinfra-llama",
+      "name": "DeepInfra - Llama 3",
+      "category": "cloud",
+      "baseUrl": "https://api.deepinfra.com/v1/openai",
+      "protocol": "openai",
+      "capabilities": {
+        "defaultModel": "meta-llama/llama-3-70b-instruct",
+        "supportsStreaming": true,
+        "supportsFunctionCalling": false,
+        "supportsMultiModal": false,
+        "maxTokenLimit": 8000
+      },
+      "headers": {
+        "apiKey": {
+          "headerName": "Authorization",
+          "valuePrefix": "Bearer "
+        }
+      },
+      "endpoints": {
+        "completion": {
+          "path": "/chat/completions",
+          "method": "POST"
+        }
+      }
+    },
+    {
+      "id": "gemini-2-0-pro",
+      "name": "Google Gemini 2.0 Pro",
+      "category": "cloud",
+      "baseUrl": "https://generativelanguage.googleapis.com/v1beta",
+      "protocol": "gemini",
+      "capabilities": {
+        "defaultModel": "gemini-2.0-pro",
+        "supportsStreaming": true,
+        "supportsFunctionCalling": true,
+        "supportsMultiModal": true,
+        "maxTokenLimit": 2000000
+      },
+      "headers": {
+        "apiKey": {
+          "headerName": "x-goog-api-key",
+          "valuePrefix": ""
+        }
+      },
+      "endpoints": {
+        "completion": {
+          "path": "/models/gemini-2.0-pro:generateContent",
+          "method": "POST"
+        }
+      }
+    },
      {
       "id": "ollama-mistral",
       "name": "Ollama - Mistral",
