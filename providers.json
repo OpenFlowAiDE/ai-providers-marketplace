@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdated": "2024-01-15T00:00:00Z",
+  "lastUpdated": "2025-10-10T00:00:00Z",
   "providers": [
     {
       "id": "openai-gpt4",
@@ -82,6 +82,223 @@
       }
     }      
   },
+       {
+      "id": "xai-grok",
+      "name": "xAI Grok",
+      "category": "cloud",
+      "baseUrl": "https://api.x.ai/v1",
+      "protocol": "openai",
+      "capabilities": {
+        "defaultModel": "grok-2",
+        "supportsStreaming": true,
+        "supportsFunctionCalling": true,
+        "supportsMultiModal": false,
+        "maxTokenLimit": 32000
+      },
+      "headers": {
+        "apiKey": {
+          "headerName": "Authorization",
+          "valuePrefix": "Bearer "
+        }
+      },
+      "endpoints": {
+        "completion": {
+          "path": "/chat/completions",
+          "method": "POST"
+        }
+      }
+    },
+    {
+      "id": "perplexity-sonar",
+      "name": "Perplexity AI Sonar",
+      "category": "cloud",
+      "baseUrl": "https://api.perplexity.ai",
+      "protocol": "openai",
+      "capabilities": {
+        "defaultModel": "sonar-large-online",
+        "supportsStreaming": true,
+        "supportsFunctionCalling": false,
+        "supportsMultiModal": false,
+        "maxTokenLimit": 12000
+      },
+      "headers": {
+        "apiKey": {
+          "headerName": "Authorization",
+          "valuePrefix": "Bearer "
+        }
+      },
+      "endpoints": {
+        "completion": {
+          "path": "/chat/completions",
+          "method": "POST"
+        }
+      }
+    },
+    {
+      "id": "deepseek-chat",
+      "name": "DeepSeek Chat",
+      "category": "cloud",
+      "baseUrl": "https://api.deepseek.com/v1",
+      "protocol": "openai",
+      "capabilities": {
+        "defaultModel": "deepseek-chat",
+        "supportsStreaming": true,
+        "supportsFunctionCalling": true,
+        "supportsMultiModal": false,
+        "maxTokenLimit": 64000
+      },
+      "headers": {
+        "apiKey": {
+          "headerName": "Authorization",
+          "valuePrefix": "Bearer "
+        }
+      },
+      "endpoints": {
+        "completion": {
+          "path": "/chat/completions",
+          "method": "POST"
+        }
+      }
+    },
+    {
+      "id": "together-ai",
+      "name": "Together AI",
+      "category": "cloud",
+      "baseUrl": "https://api.together.xyz/v1",
+      "protocol": "openai",
+      "capabilities": {
+        "defaultModel": "mistralai/Mistral-7B-Instruct-v0.1",
+        "supportsStreaming": true,
+        "supportsFunctionCalling": false,
+        "supportsMultiModal": false,
+        "maxTokenLimit": 32000
+      },
+      "headers": {
+        "apiKey": {
+          "headerName": "Authorization",
+          "valuePrefix": "Bearer "
+        }
+      },
+      "endpoints": {
+        "completion": {
+          "path": "/chat/completions",
+          "method": "POST"
+        }
+      }
+    },
+    {
+      "id": "fireworks-ai",
+      "name": "Fireworks AI",
+      "category": "cloud",
+      "baseUrl": "https://api.fireworks.ai/inference/v1",
+      "protocol": "openai",
+      "capabilities": {
+        "defaultModel": "accounts/fireworks/models/yi-large",
+        "supportsStreaming": true,
+        "supportsFunctionCalling": false,
+        "supportsMultiModal": false,
+        "maxTokenLimit": 32000
+      },
+      "headers": {
+        "apiKey": {
+          "headerName": "Authorization",
+          "valuePrefix": "Bearer "
+        }
+      },
+      "endpoints": {
+        "completion": {
+          "path": "/chat/completions",
+          "method": "POST"
+        }
+      }
+    },
+    {
+      "id": "meta-llama",
+      "name": "Meta Llama API",
+      "category": "cloud",
+      "baseUrl": "https://api.meta.ai/v1",
+      "protocol": "openai",
+      "capabilities": {
+        "defaultModel": "llama-3.2-90b-vision-instruct",
+        "supportsStreaming": true,
+        "supportsFunctionCalling": true,
+        "supportsMultiModal": true,
+        "maxTokenLimit": 32000
+      },
+      "headers": {
+        "apiKey": {
+          "headerName": "Authorization",
+          "valuePrefix": "Bearer "
+        }
+      },
+      "endpoints": {
+        "completion": {
+          "path": "/chat/completions",
+          "method": "POST"
+        }
+      }
+    },
+    {
+      "id": "amazon-bedrock",
+      "name": "Amazon Bedrock",
+      "category": "cloud",
+      "baseUrl": "https://bedrock-runtime.amazonaws.com",
+      "protocol": "aws-bedrock",
+      "capabilities": {
+        "defaultModel": "anthropic.claude-3-sonnet-20240229-v1:0",
+        "supportsStreaming": true,
+        "supportsFunctionCalling": true,
+        "supportsMultiModal": true,
+        "maxTokenLimit": 200000
+      },
+      "headers": {
+        "apiKey": {
+          "headerName": "Authorization",
+          "valuePrefix": ""
+        }
+      },
+      "endpoints": {
+        "completion": {
+          "path": "/model/anthropic.claude-3-sonnet-20240229-v1:0/invoke",
+          "method": "POST"
+        }
+      }
+    },
+    {
+      "id": "amazon-bedrock-titan",
+      "name": "Amazon Bedrock (Titan)",
+      "category": "cloud",
+      "baseUrl": "https://bedrock-runtime.amazonaws.com",
+      "protocol": "aws-bedrock",
+      "capabilities": {
+        "defaultModel": "amazon.titan-text-express-v1",
+        "supportsStreaming": true,
+        "supportsFunctionCalling": false,
+        "supportsMultiModal": false,
+        "maxTokenLimit": 8000
+      },
+      "headers": {
+        "apiKey": {
+          "headerName": "Authorization",
+          "valuePrefix": ""
+        }
+      },
+      "endpoints": {
+        "completion": {
+          "path": "/model/amazon.titan-text-express-v1/invoke",
+          "method": "POST"
+        }
+      }
+    } 
+
+
+
+
+
+
+
+
+    
     {
       "id": "ollama-local",
       "name": "Ollama (Local)",
