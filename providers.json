@@ -52,6 +52,36 @@
         }
       }
     },
+  {
+  "id": "gemini-2.0-flash",
+  "name": "Google Gemini 2.0 Flash",
+  "providerType": "cloud",
+  "protocol": "gemini",
+  "baseUrl": "https://generativelanguage.googleapis.com/v1beta",
+  "capabilities": {
+    "supportsStreaming": true,
+    "supportsFunctionCalling": true,
+    "supportsMultiModal": true,
+    "maxTokenLimit": 1048576,
+    "defaultModel": "gemini-2.0-flash"
+  },
+  "requirements": {
+    "apiKey": true,
+    "localResources": false
+  },
+  "headers": {
+    "apiKey": {
+      "headerName": "x-goog-api-key",
+      "valuePrefix": ""
+    }
+  },
+  "endpoints": {
+    "completion": {
+      "path": "/models/gemini-2.0-flash:generateContent?alt=sse",
+      "method": "POST"       
+      }
+    }      
+  },
     {
       "id": "ollama-local",
       "name": "Ollama (Local)",
