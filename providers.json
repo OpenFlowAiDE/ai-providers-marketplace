@@ -8,8 +8,8 @@
       "category": "cloud",
       "baseUrl": "https://api.openai.com/v1",
       "protocol": "openai",
-      "defaultModel": "gpt-4",
-      "capabilities": {
+       "capabilities": {
+        "defaultModel": "",
         "supportsStreaming": true,
         "supportsFunctionCalling": true,
         "supportsMultiModal": true,
@@ -34,8 +34,8 @@
       "category": "cloud",
       "baseUrl": "https://api.anthropic.com/v1",
       "protocol": "anthropic", 
-      "defaultModel": "claude-3-sonnet-20240229",
-      "capabilities": {
+       "capabilities": {
+        "defaultModel": "",
         "supportsStreaming": true,
         "supportsFunctionCalling": true,
         "supportsMultiModal": true,
@@ -61,11 +61,12 @@
       "protocol": "gemini",
       "baseUrl": "https://generativelanguage.googleapis.com/v1beta",
       "capabilities": {
+        "defaultModel": ""
         "supportsStreaming": true,
         "supportsFunctionCalling": true,
         "supportsMultiModal": true,
         "maxTokenLimit": 1048576,
-        "defaultModel": "gemini-2.0-flash"
+        
       },
       "headers": {
         "apiKey": {
@@ -87,7 +88,7 @@
       "baseUrl": "https://api.x.ai/v1",
       "protocol": "openai",
       "capabilities": {
-        "defaultModel": "grok-2",
+        "defaultModel": "",
         "supportsStreaming": true,
         "supportsFunctionCalling": true,
         "supportsMultiModal": false,
@@ -113,7 +114,7 @@
       "baseUrl": "https://api.perplexity.ai",
       "protocol": "openai",
       "capabilities": {
-        "defaultModel": "sonar-large-online",
+        "defaultModel": "",
         "supportsStreaming": true,
         "supportsFunctionCalling": false,
         "supportsMultiModal": false,
@@ -133,13 +134,13 @@
       }
     },
     {
-      "id": "deepseek-chat",
-      "name": "DeepSeek Chat",
+      "id": "deepseek",
+      "name": "DeepSeek",
       "category": "cloud",
       "baseUrl": "https://api.deepseek.com/v1",
       "protocol": "openai",
       "capabilities": {
-        "defaultModel": "deepseek-chat",
+        "defaultModel": "",
         "supportsStreaming": true,
         "supportsFunctionCalling": true,
         "supportsMultiModal": false,
@@ -165,7 +166,7 @@
       "baseUrl": "https://api.together.xyz/v1",
       "protocol": "openai",
       "capabilities": {
-        "defaultModel": "mistralai/Mistral-7B-Instruct-v0.1",
+        "defaultModel": "",
         "supportsStreaming": true,
         "supportsFunctionCalling": false,
         "supportsMultiModal": false,
@@ -191,7 +192,7 @@
       "baseUrl": "https://api.fireworks.ai/inference/v1",
       "protocol": "openai",
       "capabilities": {
-        "defaultModel": "accounts/fireworks/models/yi-large",
+        "defaultModel": "",
         "supportsStreaming": true,
         "supportsFunctionCalling": false,
         "supportsMultiModal": false,
@@ -217,7 +218,7 @@
       "baseUrl": "https://api.meta.ai/v1",
       "protocol": "openai",
       "capabilities": {
-        "defaultModel": "llama-3.2-90b-vision-instruct",
+        "defaultModel": "",
         "supportsStreaming": true,
         "supportsFunctionCalling": true,
         "supportsMultiModal": true,
@@ -243,7 +244,7 @@
       "baseUrl": "https://bedrock-runtime.amazonaws.com",
       "protocol": "aws-bedrock",
       "capabilities": {
-        "defaultModel": "anthropic.claude-3-sonnet-20240229-v1:0",
+        "defaultModel": "",
         "supportsStreaming": true,
         "supportsFunctionCalling": true,
         "supportsMultiModal": true,
@@ -269,7 +270,7 @@
       "baseUrl": "https://bedrock-runtime.amazonaws.com",
       "protocol": "aws-bedrock",
       "capabilities": {
-        "defaultModel": "amazon.titan-text-express-v1",
+        "defaultModel": "",
         "supportsStreaming": true,
         "supportsFunctionCalling": false,
         "supportsMultiModal": false,
@@ -295,7 +296,7 @@
       "baseUrl": "https://openrouter.ai/api/v1",
       "protocol": "openai",
       "capabilities": {
-        "defaultModel": "meta-llama/llama-3-70b-instruct",
+        "defaultModel": "",
         "supportsStreaming": true,
         "supportsFunctionCalling": false,
         "supportsMultiModal": false,
@@ -321,7 +322,7 @@
       "baseUrl": "https://api.mistral.ai/v1",
       "protocol": "mistral",
       "capabilities": {
-        "defaultModel": "mixtral-8x22b",
+        "defaultModel": "",
         "supportsStreaming": true,
         "supportsFunctionCalling": true,
         "supportsMultiModal": false,
@@ -347,7 +348,7 @@
       "baseUrl": "https://api.cohere.ai/v1",
       "protocol": "cohere",
       "capabilities": {
-        "defaultModel": "command-r-plus",
+        "defaultModel": "",
         "supportsStreaming": true,
         "supportsFunctionCalling": true,
         "supportsMultiModal": false,
@@ -373,7 +374,7 @@
       "baseUrl": "https://api.aleph-alpha.com",
       "protocol": "aleph-alpha",
       "capabilities": {
-        "defaultModel": "luminous-extended-control",
+        "defaultModel": "",
         "supportsStreaming": true,
         "supportsFunctionCalling": false,
         "supportsMultiModal": true,
@@ -399,7 +400,7 @@
       "baseUrl": "https://api.replicate.com/v1",
       "protocol": "replicate",
       "capabilities": {
-        "defaultModel": "meta/llama-3-70b-instruct",
+        "defaultModel": "",
         "supportsStreaming": true,
         "supportsFunctionCalling": false,
         "supportsMultiModal": false,
@@ -425,7 +426,7 @@
       "baseUrl": "https://api.deepinfra.com/v1/openai",
       "protocol": "openai",
       "capabilities": {
-        "defaultModel": "meta-llama/llama-3-70b-instruct",
+        "defaultModel": "",
         "supportsStreaming": true,
         "supportsFunctionCalling": false,
         "supportsMultiModal": false,
@@ -451,7 +452,7 @@
       "baseUrl": "https://generativelanguage.googleapis.com/v1beta",
       "protocol": "gemini",
       "capabilities": {
-        "defaultModel": "gemini-2.0-pro",
+        "defaultModel": "",
         "supportsStreaming": true,
         "supportsFunctionCalling": true,
         "supportsMultiModal": true,
@@ -477,7 +478,7 @@
       "baseUrl": "http://localhost:11434/v1",
       "protocol": "openai",
       "capabilities": {
-        "defaultModel": "mistral",
+        "defaultModel": "",
         "supportsStreaming": true,
         "supportsFunctionCalling": false,
         "supportsMultiModal": false,
@@ -503,7 +504,7 @@
       "baseUrl": "http://localhost:1234/v1",
       "protocol": "openai",
       "capabilities": {
-        "defaultModel": "local-model",
+        "defaultModel": "",
         "supportsStreaming": true,
         "supportsFunctionCalling": false,
         "supportsMultiModal": false,
@@ -529,7 +530,7 @@
       "baseUrl": "http://localhost:1337/v1",
       "protocol": "openai",
       "capabilities": {
-        "defaultModel": "local-model",
+        "defaultModel": "",
         "supportsStreaming": true,
         "supportsFunctionCalling": false,
         "supportsMultiModal": false,
@@ -555,7 +556,7 @@
       "baseUrl": "http://localhost:4891/v1",
       "protocol": "openai",
       "capabilities": {
-        "defaultModel": "gpt4all-falcon-newbpe-q4_0",
+        "defaultModel": "",
         "supportsStreaming": true,
         "supportsFunctionCalling": false,
         "supportsMultiModal": false,
