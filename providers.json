@@ -65,8 +65,7 @@
         "supportsStreaming": true,
         "supportsFunctionCalling": true,
         "supportsMultiModal": true,
-        "maxTokenLimit": 1048576,
-        
+        "maxTokenLimit": 1048576        
       },
       "headers": {
         "apiKey": {
