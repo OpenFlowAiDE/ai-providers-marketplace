@@ -289,16 +289,7 @@
           "method": "POST"
         }
       }
-    } 
-
-
-
-
-
-
-
-
-    
+    },    
     {
       "id": "ollama-local",
       "name": "Ollama (Local)",
