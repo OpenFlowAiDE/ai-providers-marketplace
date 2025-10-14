@@ -609,7 +609,7 @@
       },
       "endpoints": {
         "completion": {
-          "path": "/models/gemini-2.0-pro:generateContent",
+          "path": "/models/gemini-2.0-pro:generateContent?alt=sse",
           "method": "POST",
           "testPayload": {
             "contents": [
