@@ -1,10 +1,10 @@
 {
   "version": "1.0.0",
-  "lastUpdated": "2025-10-10T00:00:00Z",
+  "lastUpdated": "2025-10-15T00:00:00Z",
   "providers": [
     {
-      "id": "openai-gpt4",
-      "name": "OpenAI GPT-4",
+      "id": "openai",
+      "name": "OpenAI",
       "category": "cloud",
       "baseUrl": "https://api.openai.com/v1",
       "protocol": "openai",
@@ -38,8 +38,8 @@
       }
     },
     {
-      "id": "anthropic-claude",
-      "name": "Anthropic Claude 3",
+      "id": "anthropic",
+      "name": "Anthropic",
       "category": "cloud",
       "baseUrl": "https://api.anthropic.com",
       "protocol": "anthropic",
@@ -73,8 +73,8 @@
       }
     },
     {
-      "id": "gemini-2.0-flash",
-      "name": "Google Gemini 2.0 Flash",
+      "id": "google",
+      "name": "Google",
       "category": "cloud",
       "protocol": "gemini",
       "baseUrl": "https://generativelanguage.googleapis.com/v1beta",
@@ -110,7 +110,7 @@
       }
     },
     {
-      "id": "xai-grok",
+      "id": "xai",
       "name": "xAI Grok",
       "category": "cloud",
       "baseUrl": "https://api.x.ai/v1",
@@ -145,8 +145,8 @@
       }
     },
     {
-      "id": "perplexity-sonar",
-      "name": "Perplexity AI Sonar",
+      "id": "perplexity",
+      "name": "Perplexity",
       "category": "cloud",
       "baseUrl": "https://api.perplexity.ai",
       "protocol": "openai",
@@ -215,8 +215,8 @@
       }
     },
     {
-      "id": "together-ai",
-      "name": "Together AI",
+      "id": "together",
+      "name": "Together",
       "category": "cloud",
       "baseUrl": "https://api.together.xyz/v1",
       "protocol": "openai",
@@ -250,8 +250,8 @@
       }
     },
     {
-      "id": "fireworks-ai",
-      "name": "Fireworks AI",
+      "id": "fireworks",
+      "name": "Fireworks",
       "category": "cloud",
       "baseUrl": "https://api.fireworks.ai/inference/v1",
       "protocol": "openai",
@@ -285,8 +285,8 @@
       }
     },
     {
-      "id": "meta-llama",
-      "name": "Meta Llama API",
+      "id": "meta",
+      "name": "Meta",
       "category": "cloud",
       "baseUrl": "https://api.meta.ai/v1",
       "protocol": "openai",
@@ -320,8 +320,8 @@
       }
     },
     {
-      "id": "amazon-bedrock",
-      "name": "Amazon Bedrock",
+      "id": "amazon",
+      "name": "Amazon",
       "category": "cloud",
       "baseUrl": "https://bedrock-runtime.amazonaws.com",
       "protocol": "aws-bedrock",
@@ -356,41 +356,8 @@
       }
     },
     {
-      "id": "amazon-bedrock-titan",
-      "name": "Amazon Bedrock (Titan)",
-      "category": "cloud",
-      "baseUrl": "https://bedrock-runtime.amazonaws.com",
-      "protocol": "aws-bedrock",
-      "capabilities": {
-        "defaultModel": "",
-        "supportsStreaming": true,
-        "supportsFunctionCalling": false,
-        "supportsMultiModal": false,
-        "maxTokenLimit": 8000
-      },
-      "headers": {
-        "apiKey": {
-          "headerName": "Authorization",
-          "valuePrefix": ""
-        }
-      },
-      "endpoints": {
-        "completion": {
-          "path": "/model/amazon.titan-text-express-v1/invoke",
-          "method": "POST",
-          "testPayload": {
-            "inputText": "Hello",
-            "textGenerationConfig": {
-              "maxTokenCount": 5,
-              "temperature": 0
-            }
-          }
-        }
-      }
-    },
-    {
-      "id": "openrouter-llama",
-      "name": "OpenRouter - Llama 3",
+      "id": "openrouter",
+      "name": "OpenRouter",
       "category": "cloud",
       "baseUrl": "https://openrouter.ai/api/v1",
       "protocol": "openai",
@@ -424,8 +391,8 @@
       }
     },
     {
-      "id": "mistral-mixtral",
-      "name": "Mistral Mixtral 8x22B",
+      "id": "mistral",
+      "name": "Mistral",
       "category": "cloud",
       "baseUrl": "https://api.mistral.ai/v1",
       "protocol": "mistral",
@@ -459,8 +426,8 @@
       }
     },
     {
-      "id": "cohere-command-r-plus",
-      "name": "Cohere Command R+",
+      "id": "cohere",
+      "name": "Cohere",
       "category": "cloud",
       "baseUrl": "https://api.cohere.ai/v1",
       "protocol": "cohere",
@@ -479,7 +446,7 @@
       },
       "endpoints": {
         "completion": {
-          "path": "/chat",
+          "path": "/generate",
           "method": "POST",
           "testPayload": {
             "message": "Hello",
@@ -489,7 +456,7 @@
       }
     },
     {
-      "id": "aleph-alpha-luminous",
+      "id": "aleph-alpha",
       "name": "Aleph Alpha Luminous",
       "category": "cloud",
       "baseUrl": "https://api.aleph-alpha.com",
@@ -519,8 +486,8 @@
       }
     },
     {
-      "id": "replicate-llama",
-      "name": "Replicate - Llama 3",
+      "id": "replicate",
+      "name": "Replicate",
       "category": "cloud",
       "baseUrl": "https://api.replicate.com/v1",
       "protocol": "replicate",
@@ -554,8 +521,8 @@
       }
     },
     {
-      "id": "deepinfra-llama",
-      "name": "DeepInfra - Llama 3",
+      "id": "deepinfra",
+      "name": "DeepInfra",
       "category": "cloud",
       "baseUrl": "https://api.deepinfra.com/v1/openai",
       "protocol": "openai",
@@ -589,8 +556,8 @@
       }
     },
         {
-      "id": "llama-3.1-8b-instant",
-      "name": "Llama 3",
+      "id": "groq",
+      "name": "Groq",
       "category": "cloud",
       "baseUrl": "https://api.groq.com/openai/v1",
       "protocol": "openai",
@@ -626,42 +593,64 @@
       }
     },
     {
-      "id": "gemini-2-0-pro",
-      "name": "Google Gemini 2.0 Pro",
-      "category": "cloud",
-      "baseUrl": "https://generativelanguage.googleapis.com/v1beta",
-      "protocol": "gemini",
-      "capabilities": {
-        "defaultModel": "",
-        "supportsStreaming": true,
-        "supportsFunctionCalling": true,
-        "supportsMultiModal": true,
-        "maxTokenLimit": 2097152
-      },
-      "headers": {
-        "apiKey": {
-          "headerName": "x-goog-api-key",
-          "valuePrefix": ""
-        }
-      },
-      "endpoints": {
-        "completion": {
-          "path": "/models/gemini-2.0-pro:generateContent?alt=sse",
-          "method": "POST",
-          "testPayload": {
-            "contents": [
-              {
-                "parts": [
-                  {
-                    "text": "Hello"
-                  }
-                ]
-              }
-            ]
-          }
-        }
+  "id": "huggingface",
+  "name": "Hugging Face",
+  "category": "cloud", 
+  "baseUrl": "https://api-inference.huggingface.co/models",
+  "protocol": "huggingface",
+  "headers": {
+    "apiKey": {
+      "headerName": "Authorization",
+      "valuePrefix": "Bearer "
+    }
+  },
+  "endpoints": {
+    "completion": {
+      "path": "/microsoft/DialoGPT-medium",
+      "method": "POST",
+      "testPayload": {
+        "inputs": "Hello",
+        "parameters": {"max_new_tokens": 5}
       }
-    },
+    }
+  }
+},
+ {
+  "id": "azure",
+  "name": "Azure",
+  "category": "cloud",
+  "baseUrl": "https://YOUR_RESOURCE.openai.azure.com",
+  "protocol": "openai",
+  "capabilities": {
+    "defaultModel": "gpt-4",
+    "supportsStreaming": true,
+    "supportsFunctionCalling": true,
+    "supportsMultiModal": true,
+    "maxTokenLimit": 128000
+  },
+  "headers": {
+    "apiKey": {
+      "headerName": "api-key",
+      "valuePrefix": ""
+    }
+  },
+  "endpoints": {
+    "completion": {
+      "path": "/openai/deployments/gpt-4/chat/completions",
+      "method": "POST",
+      "testPayload": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Hello"
+          }
+        ],
+        "max_tokens": 5,
+        "stream": true
+      }
+    }
+  }
+},
     {
       "id": "ollama",
       "name": "Ollama",
@@ -762,41 +751,6 @@
           }
         }
       }
-    },
-    {
-      "id": "gpt4all",
-      "name": "GPT4All",
-      "category": "local",
-      "baseUrl": "http://localhost:4891/v1",
-      "protocol": "openai",
-      "capabilities": {
-        "defaultModel": "",
-        "supportsStreaming": true,
-        "supportsFunctionCalling": false,
-        "supportsMultiModal": false,
-        "maxTokenLimit": 2048
-      },
-      "headers": {
-        "apiKey": {
-          "headerName": "Authorization",
-          "valuePrefix": "Bearer "
-        }
-      },
-      "endpoints": {
-        "completion": {
-          "path": "/chat/completions",
-          "method": "POST",
-          "testPayload": {
-            "messages": [
-              {
-                "role": "user",
-                "content": "Hello"
-              }
-            ],
-            "max_tokens": 5
-          }
-        }
-      }
-    }
+    }    
   ]
 }
