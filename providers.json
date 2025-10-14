@@ -588,6 +588,43 @@
         }
       }
     },
+        {
+      "id": "llama-3.1-8b-instant",
+      "name": "Llama 3",
+      "category": "cloud",
+      "baseUrl": "https://api.groq.com/openai/v1",
+      "protocol": "openai",
+      "capabilities": {
+        "defaultModel": "",
+        "supportsStreaming": true,
+        "supportsFunctionCalling": false,
+        "supportsMultiModal": false,
+        "maxTokenLimit": 8192
+      },
+      "headers": {
+        "apiKey": {
+          "headerName": "Authorization",
+          "valuePrefix": "Bearer "
+        }
+      },
+      "endpoints": {
+        "completion": {
+          "path": "/chat/completions",
+          "method": "POST",
+          "testPayload": {
+            "model": "llama-3.1-8b-instant",
+            "messages": [
+              {
+                "role": "user",
+                "content": "Hello"
+              }
+            ],
+            "stream": true
+            "max_tokens": 5
+          }
+        }
+      }
+    },
     {
       "id": "gemini-2-0-pro",
       "name": "Google Gemini 2.0 Pro",
