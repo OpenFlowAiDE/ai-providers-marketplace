@@ -619,7 +619,7 @@
                 "content": "Hello"
               }
             ],
-            "stream": true
+            "stream": true,
             "max_tokens": 5
           }
         }
