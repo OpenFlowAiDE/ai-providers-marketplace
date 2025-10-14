@@ -666,7 +666,7 @@
       "id": "ollama",
       "name": "Ollama",
       "category": "local",
-      "baseUrl": "http://localhost:11434/v1",
+      "baseUrl": "http://localhost:11434",
       "protocol": "openai",
       "capabilities": {
         "defaultModel": "",
@@ -683,16 +683,12 @@
       },
       "endpoints": {
         "completion": {
-          "path": "/chat/completions",
+          "path": "/api/generate",
           "method": "POST",
           "testPayload": {
-            "messages": [
-              {
-                "role": "user",
-                "content": "Hello"
-              }
-            ],
-            "max_tokens": 5
+              "model": "llama2:13b",
+              "prompt": "Hello",
+              "stream": true
           }
         }
       }
