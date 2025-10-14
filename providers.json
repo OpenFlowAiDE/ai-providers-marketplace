@@ -93,7 +93,7 @@
       },
       "endpoints": {
         "completion": {
-          "path": "/models/gemini-2.0-flash:generateContent",
+          "path": "/models/gemini-2.0-flash:generateContent?alt=sse",
           "method": "POST",
           "testPayload": {
             "contents": [
