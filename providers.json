@@ -655,7 +655,7 @@
       "id": "ollama",
       "name": "Ollama",
       "category": "local",
-      "baseUrl": "http://localhost:11434",
+      "baseUrl": "http://localhost:11434/api/generate",
       "protocol": "openai",
       "capabilities": {
         "defaultModel": "",
